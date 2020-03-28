@@ -6,6 +6,9 @@
     color: #2c2c2f;
     background: #D3FFCB;/*背景色*/
 }
+.main {
+    background: rgb(242, 255, 238);
+}
 .main-content {
     max-width: 800px;
     padding: 0.5em 1em;
@@ -23,6 +26,47 @@
     background: #D3FFCB;
     box-shadow: 0px 0px 0px 10px #D3FFCB;
     border: dashed 2px white;
+}
+.sub-title{
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: -webkit-repeating-linear-gradient(-45deg, #DDFFDF, #DDFFDF 3px,#E9FFEA 3px, #E9FFEA 7px);
+    background: repeating-linear-gradient(-45deg, #DDFFDF, #DDFFDF 3px,#E9FFEA 3px, #E9FFEA 7px);
+}
+.profile-box {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #2BC92C;
+}
+.profile-box .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #2BC92C;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.movie-wrap {
+    margin: 5px;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.movie-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 560px;
+    height: 100%;
+    max-height: 315px;
 }
 
 /* SNS一覧 */
@@ -43,7 +87,7 @@
     text-decoration: none;
     color: white;
     border-radius: 5px;
-    padding: 14px 80px;
+    padding: 14px calc(15% - 20px);
 }
 .facebook:hover {
     background-color: #354F84;
@@ -65,7 +109,7 @@
     text-decoration: none;
     color: white;
     border-radius: 5px;
-    padding: 14px 80px;
+    padding: 14px calc(15% - 20px);
 }
 .twitter:active {
     top: 2px;
@@ -74,7 +118,7 @@
 .twitter:hover {
     background-color: #1397D8;
 }
-.google {
+.line {
     background-color: rgb(34, 204, 43);
     box-shadow: 0 4px 0 rgb(28, 116, 2);
 
@@ -87,12 +131,76 @@
     text-decoration: none;
     color: white;
     border-radius: 5px;
-    padding: 14px 80px;
+    padding: 14px calc(15% - 20px);
 }
-.google:active {
+.line:active {
     top: 2px;
     box-shadow: 0 2px 0 rgb(44, 150, 2);
 }
-.google:hover {
+.line:hover {
     background-color: rgb(106, 211, 96);
+}
+
+/* 本文 */
+.under {
+    background: linear-gradient(transparent 50%, #D3FFCB 50%);
+  }
+.mark-color {
+    color: #2BC92C;
+}
+.carp-color {
+    color: red;
+}
+.big-word {
+    font-size: x-large;
+}
+.renewed {
+    font-style: italic;
+    text-align: right;
+    font-weight: 600;
+    font-size: small;
+    color: rgb(163, 175, 187);
+}
+.add_friend {
+    font-style: italic;
+    font-weight: 600;
+    font-size: small;
+    color: rgb(163, 175, 187);
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #D3FFCB;
+    color: #2c2c2f;
+    text-align: center;
+}
+ul.footer-menu li {
+display: inline;
+}
+ul.footer-menu a:link {
+    color: #2c2c2f;
+}
+ul.footer-menu a:visited {
+    color: #2c2c2f;
+}
+ul.footer-menu a:hover {
+    color: #00410e;
+}
+ul.footer-menu a:active {
+    color: #002b0a;
+}
+
+div.ushinohi-link a:link {
+    color: #005713;
+}
+div.ushinohi-link a:visited {
+    color: #007423;
+}
+div.ushinohi-link a:hover {
+    color: #00410e;
+}
+div.ushinohi-link a:active {
+    color: #002b0a;
 }
